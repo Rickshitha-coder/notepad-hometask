@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Appointment form</title>
+<h1 style="text-align:center; color:red;">Registration Form</h1>
+<form action="/submit" method="POST">
+<fieldset>
+<legend>Personal Information</legend>
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" placeholder="Enter your name:" required><br><br>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" placeholder="Enter the Email Address:" required><br><br>
+<label for="phone">Contact Number:</label>
+<input type="tel" id="phone" name="phone" placeholder="Enter the Phone Number:" required><br><br>
+<label for="age">Age:</label>
+<input type="number" id="age" name="age" placeholder="Enter the Age" required><br><br>
+<label for="dob">Date of Birth:</label>
+<input type="date" id="dob" name="dob" placeholder="Enter Your Date of Birth" required><br><br>
+</fieldset>
+<fieldset>
+<legend>Job & Appointment details</legend>
+<label for="interview">Apppointed Interview Date and Time:</label>
+<input type="datetime-local" id="interview" name="interview" required><br><br>
+<label for="Years">Years Of Experience:</label>
+<input type="number" id="Years" name="Years">
+<label for="level">Confidenece About Your Work:</label>
+<input type="range" id="level" name="level" min="1" max="10" required><br><br>
+<label for="position">Search Position:</label>
+<input type="search" id="position" name="position" required><br><br>
+<label for="pos">Select the position Applied for</label>
+<select id="pos" name="pos">
+<option value=""></option>
+<option value="Marketing">Marking Manager</option>
+<option value="Software engineer">Software Enginner</option>
+<option value="Data Analyst">Data Analyst</option>
+<option value="HR specialist">HR specialist</option>
+</select><br><br>
+<label for="country">Country:</label>
+<select id="country" name="country">
+<<option value=""></option>
+<option value="India">India</option>
+<option value="US">United State</option>
+<option value="UK">United Kingdom</option>
+<option value="Canada">Canada</option>
+<option value="Australia">Australia</option>
+</select><Br><br>
+<label for="msg">Queries:</label>
+<textarea id="msg" name="msg" palceholder="If You Have A Queries"></textarea>
+
+</fieldset>
+<button type="reset">Reset</button>
+<button type="submit" onclick="alert('Form Submitted successfully')">Submit</button><Br>
+
+</form>
+</body></html>
